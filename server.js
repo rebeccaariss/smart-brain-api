@@ -20,9 +20,10 @@ const db = knex({
     }
 });
 
-db.select('*').from('users').then(data => {
-    console.log(data);
-});
+// test db connection in console itself:
+// db.select('*').from('users').then(data => {
+//     console.log(data);
+// });
 
 const app = express();
 

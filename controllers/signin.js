@@ -1,3 +1,7 @@
+// Old method:
+// const handleSignIn (req, res, db, bcrypt) => {
+// See Section 28: Production + Deployment for more on new method.
+
 const handleSignIn = (db, bcrypt) => (req, res) => {
     const { email, password } = req.body;
     if (!email || !password) {
