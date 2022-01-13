@@ -17,7 +17,7 @@ const db = knex({
         port : process.env.PORT,
         user : '',
         password : '',
-        database : 'smart-brain'
+        database : 'postgresql-fitted-80755'
     }
 });
 
