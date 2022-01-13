@@ -12,13 +12,19 @@ const image = require('./controllers/image');
 const db = knex({
     client: 'pg',
     connection: {
-        // host : '127.0.0.1', // (localhost)
-        host : 'agile-plateau-47799',
-        port : process.env.PORT,
-        user : '',
-        password : '',
-        database : 'postgresql-fitted-80755'
+        connectionString : process.env.DATABASE_URL,
+        ssl: {
+            rejectUnauthorized : false
+        }
     }
+    // connection: {
+    //     // host : '127.0.0.1', // (localhost)
+    //     host : 'agile-plateau-47799',
+    //     port : process.env.PORT,
+    //     user : '',
+    //     password : '',
+    //     database : 'postgresql-fitted-80755'
+    // }
 });
 
 // test db connection in console itself:
