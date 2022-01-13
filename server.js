@@ -13,7 +13,7 @@ const db = knex({
     client: 'pg',
     connection: {
         // host : '127.0.0.1', // (localhost)
-        host : 'agile-plateau-47799'
+        host : 'postgresql-fitted-80755'
         port : 5432,
         user : '',
         password : '',
