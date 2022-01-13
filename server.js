@@ -12,7 +12,8 @@ const image = require('./controllers/image');
 const db = knex({
     client: 'pg',
     connection: {
-        host : '127.0.0.1', // (localhost)
+        // host : '127.0.0.1', // (localhost)
+        host : 'agile-plateau-47799'
         port : 5432,
         user : '',
         password : '',
