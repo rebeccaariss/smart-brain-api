@@ -14,7 +14,7 @@ const db = knex({
     connection: {
         // host : '127.0.0.1', // (localhost)
         host : 'agile-plateau-47799',
-        port : 5432,
+        port : process.env.PORT,
         user : '',
         password : '',
         database : 'smart-brain'

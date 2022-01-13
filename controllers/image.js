@@ -3,7 +3,7 @@ const Clarifai = require('clarifai');
 const app = new Clarifai.App({
     // Note: API key temporarily removed for initial commit
     // (will update with more information regarding API calls at a later time)
-    apiKey: ''
+    apiKey: '0cca1a53099f4cc4b0089bc1d2d1ec5b'
 });
 
 const handleApiCall = (req, res) => {
